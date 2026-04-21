@@ -1,0 +1,19 @@
+{
+  "inventory": [
+    {
+      "id": 1,
+      "baseName": "Bucket Hat",
+      "baseDescription": "Stylish bucket hat"
+    },
+    {
+      "id": 2,
+      "baseName": "Clock",
+      "baseDescription": "Wall clock"
+    },
+    {
+      "id": 3,
+      "baseName": "T-Shirt",
+      "baseDescription": "Comfortable cotton shirt"
+    }
+  ]
+}
