@@ -1,14 +1,15 @@
+import ProductCard from './ProductCard.jsx';
+
 function ProductList({ inventory }) {
   return (
     <ul>
       {inventory.map((item) => {
         return (
-          <li key={item.id}>
-            <div className="itemCard">
-              <h2>{item.baseName}</h2>
-              <p>{item.baseDescription}</p>
-            </div>
-          </li>
+          <ProductCard
+            key={item.id}
+            baseName={item.baseName}
+            baseDescription={item.baseDescription}
+          />
         );
       })}
     </ul>
