@@ -1,15 +1,18 @@
 import ProductCard from './ProductCard.jsx';
 
-function ProductList({ inventory }) {
+function ProductList({ inventory, handleAddItemToCart }) {
   return (
     <ul>
       {inventory.map((item) => {
         return (
-          <ProductCard
-            key={item.id}
-            baseName={item.baseName}
-            baseDescription={item.baseDescription}
-          />
+          <li key={item.id}>
+            <ProductCard
+              id={item.id}
+              baseName={item.baseName}
+              baseDescription={item.baseDescription}
+              handleAddItemToCart={handleAddItemToCart}
+            />
+          </li>
         );
       })}
     </ul>
